@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Project NIRMALA</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	width = 100%;
+}
+th, td {
+    padding: 5px;
+	text-align: center;
+	}
+th{
+font-size: 19px;}
+td{
+font-size: 18px;}
+</style>
+	<style>
+	.dropdown-menu {
+      background-color: #525252;
+    }
+	</style>
+   
+    <style>
+	.FloatingWidget {position:fixed; left:0px; top:50%;transition: .5s ease;
+    top: 300px;
+    left: 1240px;
+    right: -420px;
+    bottom: -19	px;}
+
+
+.button {
+  margin: 0 10px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  min-width: 96px;
+  line-height: 46px;
+  padding: 0 24px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px #154c86;
+  background-color: #247edd;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #1c65b2 #18589c #18589c;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
+.button:before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  bottom: -25%;
+  left: -20%;
+  right: -20%;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+}
+.button:hover {
+  background-color: #1a74d3;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 -1px #154c86;
+  background: #1f71c8;
+  border-color: #113f70 #154c86 #1c65b2;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  background-image: -webkit-linear-gradient(top, #1a5da5, #3a8be0);
+  background-image: -moz-linear-gradient(top, #1a5da5, #3a8be0);
+  background-image: -o-linear-gradient(top, #1a5da5, #3a8be0);
+  background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);
+}
+.button:active:before {
+  top: -50%;
+  bottom: -125%;
+  left: -15%;
+  right: -15%;
+  -webkit-box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+}
+
+.button-green {
+  text-shadow: 0 1px #0d4d09;
+  background-color: #1ca913;
+  border-color: #147b0e #11640b #11640b;
+}
+.button-green:hover {
+  background-color: #159b0d;
+}
+.button-green:active {
+  text-shadow: 0 -1px #0d4d09;
+  background: #189210;
+  border-color: #093606 #0d4d09 #147b0e;
+  background-image: -webkit-linear-gradient(top, #126d0c, #20c016);
+  background-image: -moz-linear-gradient(top, #126d0c, #20c016);
+  background-image: -o-linear-gradient(top, #126d0c, #20c016);
+  background-image: linear-gradient(to bottom, #126d0c, #20c016);
+}
+
+.button-red {
+  text-shadow: 0 1px #72100d;
+  background-color: #cd1d18;
+  border-color: #9f1713 #891310 #891310;
+}
+.button-red:hover {
+  background-color: #c01511;
+}
+.button-red:active {
+  text-shadow: 0 -1px #72100d;
+  background: #b61a15;
+  border-color: #5b0d0b #72100d #9f1713;
+  background-image: -webkit-linear-gradient(top, #921511, #e4201b);
+  background-image: -moz-linear-gradient(top, #921511, #e4201b);
+  background-image: -o-linear-gradient(top, #921511, #e4201b);
+  background-image: linear-gradient(to bottom, #921511, #e4201b);
+}
+
+</style>
+
+<style>
+.prescription{
+	
+}
+</style>
+
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Project NIRMALA </a>
+            </div>
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a>
+                    </li>
+                    <li><a href="about.html">ABOUT</a>
+                    </li>
+                    <li><a href="howto.html">HOW TO USE</a>
+                    </li>
+                    <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FIND <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="finddoc.html">Doctor</a></li>
+                        <li><a href="findpharmacy.html">Pharmacy</a></li>
+						<li><a href="#.html">Hospital</a></li>
+                    </ul>
+					</li>
+                    <li><a href="newsfeed.html">NEWSFEED</a>
+                    </li>
+                    <li><a href="http://www.indianhealthcareblog.com/">BLOG</a>
+                    </li>
+                    <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">MORE <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="analytics.html">Analytics</a></li>
+                        <li><a href="complaints.html">Complaint Form</a></li>
+                    </ul>
+					</li>
+                     <li><a href="contact.html">CONTACT US</a>
+                    </li>
+                    <li><a href="ambulanceorginal.html">
+					<img src="images/ambulance_plain_red.png" style="height:25px; width:25px;">
+					</a>
+					<li><a href="bloodbank.html">
+					<img src="images/blood_drop-512.png" style="height:25px; width:25px;">
+					</a>
+                    </li>
+					 <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/profile1.png" style="height:25px; width:25px;"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="login.html">Log Out</a></li>
+                    </ul>
+					</li>
+                </ul>
+				<br>
+				<p style="color:white">Cloud computing platform for affordable healthcare for all </p>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--End Navigation -->
+
+    <!--Header section  -->
+	
+    
+    <!--End Header section  -->
+
+
+    <!--About Section-->
+	
+    <!--End About Section-->
+
+    <!-- Services Section-->
+    
+     <!--End Services Section-->
+
+    <!-- Free Section --><br><br><br><br><br><br><br><br><br>
+	<table style="width:100%"><br><br><br><br><br>
+				<table style="width:100%">
+					<tr>
+						<th>Doctor Name </th>
+						<th>Address</th>
+						<th>Phone</th>
+						<th>E-Mail</th>
+						<th>Rating</th>
+						<td>Book</td>
+
+						</tr>
+					<tr>
+						<td>Dr. Ram Prasad</td>
+						<td>No:22 Infantry Road, Shivaji Nagar - 11</td>
+						<td>080 24728474</td>
+						<td>ram.prasad@gmail.com</td>
+						<td> 4.2 </td>
+						<td><button type="button" style="width:200px;height:50px" onclick="window.location.href='bookappointment.html'">Book Now</button></td>
+					</tr>
+					<tr>
+						<td>Dr. Shilpa Sharma</td>
+						<td>No:42 Infantry Road, Shivaji Nagar - 11</td>
+						<td>080 24728474</td>
+						<td>dr.shilpa@gmail.com</td>
+						<td> 3.7 </td>
+						<td><button type="button" style="width:200px;height:50px" onclick="window.location.href='bookappointment.html'">Book Now</button></td>
+			
+					</tr>
+					<tr>
+						<td>Dr. Sri Rama</td>
+						<td>No:11 Shivaji Nagar Main Road - 11</td>
+						<td>080 24728474</td>
+						<td>dr.srirama@gmail.com</td>
+						<td> 3.2 </td>
+						<td><button type="button" style="width:200px;height:50px" onclick="window.location.href='bookappointment.html'">Book Now</button></td>
+			
+					</tr>
+					<tr>
+						<td>Dr. Vishwamithra</td>
+						<td>No:8 Shivaji Nagar Main Road - 11</td>
+						<td>080 24728474</td>
+						<td>dr.shilpa@gmail.com</td>
+						<td> 2.9 </td>
+						<td><button type="button" style="width:200px;height:50px" onclick="window.location.href='bookappointment.html'">Book Now</button></td>
+			
+					</tr>
+				</table>
+</html>

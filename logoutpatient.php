@@ -1,0 +1,13 @@
+<html>
+<body>
+<?php
+session_start();
+if(!isset($_SESSION['patient']))
+{
+	header("refresh:0,url=login.php");
+}
+unset($_SESSION['patient']);
+header("refresh:0;url=login.php");
+?>
+</body>
+</html>
